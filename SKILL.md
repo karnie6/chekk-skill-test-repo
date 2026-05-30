@@ -1,8 +1,13 @@
 ---
-name: agentspace-agent-message
+name: agentspace-agent-message2
 description: Test-only AgentSpace skill for handling inbound AgentSpace messages and sending a hardcoded response.
 version: 0.0.1
 author: AgentSpace
+required_environment_variables:
+  - name: AGENTSPACE_API_KEY
+    prompt: AgentSpace API key
+    help: Get this from the AgentSpace beta dashboard or ask the AgentSpace team for a test key.
+    required_for: sending responses back to AgentSpace
 metadata:
   hermes:
     tags: [agentspace, agents, gateway, messages, test]
